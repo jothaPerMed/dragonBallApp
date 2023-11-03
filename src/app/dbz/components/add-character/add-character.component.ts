@@ -26,14 +26,14 @@ export class AddCharacterComponent {
     } else {
       return;
     }
-
+    this.resetForm();
 
   }
 
 
-   resetForm(){
-    this.personaje.name=""
-    this.personaje.power=0
+  resetForm() {
+    this.personaje.name = ""
+    this.personaje.power = 0
   }
 
 

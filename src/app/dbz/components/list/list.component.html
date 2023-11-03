@@ -5,8 +5,9 @@
 
     <li class="list-group-item d-flex justify-content-between align-item-center" *ngFor="let person of dbzList; let i=index">
       <div><span class="text-primary">{{i+1}}</span>
-        <span>{{person.name}}</span>
-        <span>{{person.power}}</span>
+        <span class="">{{person.id}} - </span>
+        <span class="">{{person.name}} - </span>
+        <span class="">{{person.power}}</span>
       </div>
       <button class="btn btn-danger" (click)="onDeletePersonaje(i)">X</button>
     </li>

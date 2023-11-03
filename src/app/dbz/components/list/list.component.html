@@ -9,7 +9,7 @@
         <span class="">{{person.name}} - </span>
         <span class="">{{person.power}}</span>
       </div>
-      <button class="btn btn-danger" (click)="onDeletePersonaje(i)">X</button>
+      <button class="btn btn-danger" (click)="onDeletePersonaje(person.id || '')">X</button>
     </li>
   </ul>
 

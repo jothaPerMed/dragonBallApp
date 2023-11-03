@@ -13,14 +13,12 @@ export class ListComponent {
 
 
 
-  onDeletePersonaje (index:number):void{
-    console.log(index)
-    // this.dbzList?.splice(index)
-    this.onDelete.emit(index);
+  onDeletePersonaje (id?:string):void{
+    this.onDelete.emit(id);
   }
 
 
   @Output()
-  public onDelete: EventEmitter<number> = new EventEmitter();
+  public onDelete: EventEmitter<string> = new EventEmitter();
 
 }

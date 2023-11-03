@@ -40,4 +40,8 @@ export class MainPageComponent implements OnInit {
     }
 
   }
+
+  onDeletePersonaje(index:number){
+    this.characters?.splice(index, 1);
+  }
 }

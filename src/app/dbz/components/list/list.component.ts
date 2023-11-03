@@ -8,7 +8,7 @@ import { Characater } from '../../interfaces/Character.interface';
 })
 export class ListComponent {
   @Input()
-  public dbzList ?: Characater[] =
-  [
-  ]
+  public dbzList ?: Characater[]
+
+
 }

@@ -32,4 +32,12 @@ export class MainPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }
+
+  onNewPerson(personaje : Characater){
+    console.log(personaje);
+    if(personaje!=undefined){
+      this.characters?.push(personaje);
+    }
+
+  }
 }

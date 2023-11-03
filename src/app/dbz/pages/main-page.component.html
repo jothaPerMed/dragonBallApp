@@ -2,4 +2,4 @@
 
 <hr>
 <app-list [dbzList]="characters"></app-list>
-<app-add-character></app-add-character>
+<app-add-character (onNewPerson)="onNewPerson($event)"></app-add-character>
